@@ -1,6 +1,6 @@
 package Array_Program;
 import java.util.*;
-public class sortStringandNumericArray{
+public class arrayToString{
     public static String Result(int arr[],int size){
         String answer=Arrays.toString(arr);
         return answer;
