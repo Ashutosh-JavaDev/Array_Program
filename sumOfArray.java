@@ -19,6 +19,6 @@ public class sumOfArray {
             arr[i]=sc.nextInt();
         }
         int output=sumOfNumber(arr, size);
-        System.out.println("Total sum:  "+output);
+        System.out.println("Total sum:  "+output); 
     }
 }
