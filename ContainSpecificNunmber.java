@@ -14,6 +14,9 @@ public class ContainSpecificNunmber {
         if(count>0){
             System.out.println("Number is presemt in the array");
         }
+        else{
+            System.out.println("Number is not Found in the array");
+        }
 
     }
     public static void main(String[] args) {
