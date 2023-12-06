@@ -8,11 +8,12 @@ public class ContainSpecificNunmber {
         int count = 0;
         for (int i = 0; i < size; i++) {
             if (number == arr[i]) {
+                System.out.println("Number Present in Index: "+(i+1));
                 count++;
             }
         }
         if(count>0){
-            System.out.println("Number is presemt in the array");
+            System.out.println("Number is present in the array");
         }
         else{
             System.out.println("Number is not Found in the array");
