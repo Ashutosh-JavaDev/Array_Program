@@ -1,7 +1,7 @@
 //Write a Java program to find duplicate values in an array of integer values.
 package Array_Program;
 import java.util.*;
-public class Duplicate {
+public class IntegerDuplicate {
     public static void duplicateNumber(int arr[],int size){
         int count=0;
         System.out.println("Duplicate number:");
