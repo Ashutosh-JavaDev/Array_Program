@@ -5,6 +5,8 @@ import java.util.*;
 public class insertElement {
     public static void result(int arr[], int index, int size, int number) {
         if (index >= 0 && index <= size) {
+            System.out.println("Original Array: " + Arrays.toString(arr));
+
             // Shift elements to the right to make space for the new element
             for (int i = size - 1; i > index; i--) {
                 arr[i] = arr[i - 1];
@@ -12,10 +14,8 @@ public class insertElement {
             // Insert the new element at the specified index
             arr[index] = number;
 
-            System.out.println("New Array");
-            for (int i = 0; i < size + 1; i++) {
-                System.out.println(arr[i]);
-            }
+            // System.out.println("New Array");
+            System.out.println("New Array:  " + Arrays.toString(arr));
         } else {
             System.out.println("Invalid Index: Index should be between 0 and " + size);
         }
