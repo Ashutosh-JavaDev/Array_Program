@@ -17,7 +17,7 @@ public class averageExceptLargeandSmallest {
             }
         }
         for(int i=0;i<size;i++){
-            if(arr[i]!=max && arr[i]!=min){
+            if(arr[i]!=max || arr[i]!=min){
                 sum+=arr[i];
             }
         }
