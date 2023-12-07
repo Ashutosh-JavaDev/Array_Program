@@ -5,7 +5,7 @@ public class ArrayContainsnegativenumber {
     public static boolean check(int arr[],int size){
         boolean result=false;
         for(int i=0;i<size;i++){
-            if(arr[i]!=0 &&arr[i]!=-1){
+            if(arr[i]==0 &&arr[i]==-1){
                 result=true;
             }
             else{
