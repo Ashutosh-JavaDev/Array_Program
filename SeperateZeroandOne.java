@@ -3,6 +3,14 @@ package Array_Program;
 import java.util.*;
 public class SeperateZeroandOne {
     public static void Seperate(int arr[],int size){
-        
+        int seperatenumber=0;
+        for(int i=0;i<size;i++){
+            if(arr[i]!=0 || arr[i]!=1){
+                System.out.println("put only 0 and 1 in the array");
+            }
+            else{
+                
+            }
+        }
     }
 }
