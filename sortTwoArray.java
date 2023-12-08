@@ -8,11 +8,12 @@ public class sortTwoArray {
             for (int j = 0; j < size2; j++) {
                 if (arr1[i] > arr2[j]) {
                     int temp = arr1[i];
-                    arr1[i] = arr1[i + 1];
-                    arr1[i + 1] = temp;
+                    arr1[i] = arr2[j];
+                    arr2[j] = temp;
                 }
             }
         }
+        Arrays.sort(arr2);
         System.out.println("Array after sort");
         for (int i = 0; i < size1; i++) {
             System.out.println(arr1[i]);
@@ -29,15 +30,15 @@ public class sortTwoArray {
         int size1 = sc.nextInt();
         int arr1[] = new int[size1];
         System.out.println("Enter the value in the first Array");
-        for(int i=0;i<size1;i++){
-            arr1[i]=sc.nextInt();
+        for (int i = 0; i < size1; i++) {
+            arr1[i] = sc.nextInt();
         }
         System.out.println("Enter the size of Second Array");
         int size2 = sc.nextInt();
         int arr2[] = new int[size2];
         System.out.println("Enter the value in the first Array");
-        for(int i=0;i<size2;i++){
-            arr2[i]=sc.nextInt();
+        for (int i = 0; i < size2; i++) {
+            arr2[i] = sc.nextInt();
         }
         sorted(arr1, arr2, size1, size2);
 
