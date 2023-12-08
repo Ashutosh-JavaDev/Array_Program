@@ -10,7 +10,6 @@ public class sumCloseToZero {
             for (int j = i + 1; j < size; j++) {
                 if ((arr[i] + arr[j]) > -3 || (arr[i] + arr[j]) < 3) {
                     System.out.println(arr[i] + " + " + arr[j] + " = " + (arr[i] + arr[j]));
-                    System.out.println("Number is closer to zero");
                     count++;
                     break;
                 } else if ((arr[i] + arr[j]) == 0) {
@@ -21,16 +20,20 @@ public class sumCloseToZero {
         }
         if (count == 0) {
             System.out.println("Answer is far from zero");
+        } else {
+            System.out.println("Number is closer to zero");
+
         }
     }
+
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("Enter the size of the Array");
-        int size=sc.nextInt();
-        int arr[]=new int[size];
-        System.out.println("Enter the value in the Array");
-        for(int i=0;i<size;i++){
-            arr[i]=sc.nextInt();
+        int size = sc.nextInt();
+        int arr[] = new int[size];
+        System.out.println("Enter the value in the Array in negative and posetive way");
+        for (int i = 0; i < size; i++) {
+            arr[i] = sc.nextInt();
         }
         check(arr, size);
     }
