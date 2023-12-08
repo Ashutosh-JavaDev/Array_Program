@@ -5,12 +5,13 @@ public class suffleArray {
     public static void shuffle(int arr[],int size){
         int index=0;
         for(int i=0;i<size;i++){
-            if(arr[i]<25){
-                int temp=arr[i+1];
-                arr[i+1]=arr[index];
-                arr[index]=temp;
-                index++;
+           for(int j=i+1;j<size;j++){
+            if(arr[i]<arr[j]){
+                int temp=arr[i];
+                arr[i]=arr[j];
+                arr[j]=temp;
             }
+           }
         }
         System.out.println("Shuffle Array:");
         for(int i=0;i<size;i++){
