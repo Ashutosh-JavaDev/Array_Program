@@ -7,13 +7,10 @@ public class SeperateZeroandOne {
     public static void Seperate(int arr[], int size) {
         int seperatenumber = 0;
         for (int i = 0; i < size; i++) {
-            if (arr[i] != 0 || arr[i] != 1) {
-                System.out.println("put only 0 and 1 in the array");
-                break;
-            } else if (arr[i] == 0 || arr[i] == 1) {
+            if (arr[i] != 0) {
                 int temp = arr[i];
                 arr[i] = arr[seperatenumber];
-                arr[i] = temp;
+                arr[seperatenumber] = temp;
                 seperatenumber++;
             }
         }
@@ -22,15 +19,22 @@ public class SeperateZeroandOne {
             System.out.println(arr[i] + " ");
         }
     }
+
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("Enter the size of the Array");
-        int size=sc.nextInt();
-        int arr[]=new int[size];
+        int size = sc.nextInt();
+        int arr[] = new int[size];
         System.out.println("Enter the value in array, only 1 and 0");
-        for(int i=0;i<size;i++){
-            arr[i]=sc.nextInt();
+        for (int i = 0; i < size; i++) {
+            arr[i] = sc.nextInt();
         }
-        Seperate(arr, size);
+        for (int i = 1; i == 1; i++) {
+            if (arr[i] == 0 || arr[i] == 1) {
+                Seperate(arr, size);
+            } else {
+                System.out.println("Put only 0 and 1 in the Array");
+            }
+        }
     }
 }
