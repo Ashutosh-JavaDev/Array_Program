@@ -19,7 +19,7 @@ public class negativeThanPosetive {
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        System.out.println("Enter thew Size of the Array");
+        System.out.println("Enter the Size of the Array");
         int size=sc.nextInt();
         int arr[]=new int[size];
         System.out.println("Enter Negative and Positive Number to check the Program");
