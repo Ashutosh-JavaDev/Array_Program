@@ -7,7 +7,7 @@ public class nextProduct {
     public static void productNext(int arr[], int size) {
         int product=1;
         for(int i=0;i<size;i++){
-            product=product*i;
+            product=product*arr[i];
         }
         System.out.println("The Product after next Number");
         for(int i=0;i<size;i++){
