@@ -27,6 +27,8 @@ public class tripletSum {
         for(int i=0;i<size;i++){
             arr[i]=sc.nextInt();
         }
-        
+        System.out.println("Enter the Number want to find the sum");
+        int number=sc.nextInt();
+        triplet(arr, size, number);
     }
 }
