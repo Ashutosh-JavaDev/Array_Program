@@ -20,7 +20,7 @@ public class dominaceOfNegativeNumber {
         System.out.println("Enter the size of the Size");
         int size=sc.nextInt();
         int arr[]=new int[size];
-        System.out.println("Enter the valuer in the arra");
+        System.out.println("Enter the valuer in the array");
         for(int i=0;i<size;i++){
             arr[i]=sc.nextInt();
         }
