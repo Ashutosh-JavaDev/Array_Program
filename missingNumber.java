@@ -10,7 +10,7 @@ public class missingNumber {
         for (int i = 0; i < size; i++) {
             sum = sum + arr[i];
         }
-        int newNumber = temp - sum;
+        int newNumber = sum - temp;
         return newNumber;
     }
 
@@ -24,6 +24,8 @@ public class missingNumber {
             arr[i] = sc.nextInt();
 
         }
+        int Answer=Missing(arr,size);
+        System.out.println("Missing  Number:"+Answer);
 
     }
 }
