@@ -6,7 +6,8 @@ import java.util.*;
 public class missingNumber {
     public static int Missing(int arr[], int size) {
         int sum = 0;
-        int temp = size * ((size + 1) / 2);
+        int total_number=arr.length();
+        int temp = total_number * ((total_number + 1) / 2);
         for (int i = 0; i < size; i++) {
             sum = sum + arr[i];
         }
