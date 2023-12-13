@@ -10,7 +10,7 @@ public class printAlldataInOne {
         String start = sc.nextLine();
         if (start.equalsIgnoreCase("Start")) {
             String stop = "";
-            while (!stop.equalsIgnoreCase("N")) {
+            while (!stop.equalsIgnoreCase("no")) {
                 System.out.println("\nEnter Name");
                 String name = sc.nextLine();
                 System.out.println("Enter Age");
@@ -23,7 +23,7 @@ public class printAlldataInOne {
                 System.out.println(age);
                 System.out.println(mail);
 
-                System.out.println("Press N to Stop");
+                System.out.println("Press 'no' to Stop and  'Yes' to Continue");
                 stop = sc.nextLine();
             }
         } else {
