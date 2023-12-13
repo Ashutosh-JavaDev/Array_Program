@@ -6,12 +6,12 @@ import java.util.*;
 public class missingNumber {
     public static int Missing(int arr[], int size) {
         int sum = 0;
-        int total_number=arr.length();
+        int total_number=arr.length;
         int temp = total_number * ((total_number + 1) / 2);
         for (int i = 0; i < size; i++) {
             sum = sum + arr[i];
         }
-        int newNumber = sum - temp;
+        int newNumber = temp - sum;
         return newNumber;
     }
 
