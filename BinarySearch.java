@@ -2,11 +2,12 @@ package Array_Program;
 import java.util.*;
 public class BinarySearch {
     public static void PrintSearch(int arr[],int size,int num){
-        int first=0,mid=0,last=size-1,count=0;
+        int first=0,mid=0,last=size-1,count=0,position=0;
         while(first<=last){
             mid=(first+last)/2;
             if(arr[mid]==num){
-                count=mid+1;
+                position=mid+1;
+                count++;
                 break;
             }
             else if(arr[mid]<num){
@@ -17,7 +18,7 @@ public class BinarySearch {
             }
         }
         if(count>0){
-            System.out.println("Given Number Found in "+count+" Position");
+            System.out.println("Given Number Found in "+position+" Position "+count+" Times");
         }
         else{
             System.out.println("Givenn Number Not Found");
