@@ -9,10 +9,12 @@ class cubeAr{
         for(int i=0;i<10;i++){
             arr[i]=sc.nextInt();
         }
+
         // int temp;
+        System.out.println("Cubic Array");
         for(int i=0;i<10;i++){
             // temp=(arr[i]*arr[i]*arr[i]);
-            System.out.print(arr[i]*arr[i]*arr[i]);
+            System.out.print(arr[i]*arr[i]*arr[i]+" ");
         }
     }
 }
