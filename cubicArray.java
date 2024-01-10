@@ -9,6 +9,11 @@ class cubeAr{
         for(int i=0;i<10;i++){
             arr[i]=sc.nextInt();
         }
+        int temp;
+        for(int i=0;i<10;i++){
+            temp=(arr[i]*arr[i]*arr[i]);
+        }
+        return temp;
 
     }
 }
