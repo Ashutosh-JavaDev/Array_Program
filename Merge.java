@@ -24,6 +24,9 @@ class sorting{
             j++;
             k++;
         }
+        for(i=0,j=s;i<arr1.length;i++,j++){
+            arr[j]=arr1[i];
+        }
     }
 }
 public class Merge {
