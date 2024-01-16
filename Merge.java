@@ -15,6 +15,15 @@ class sorting{
                 j++;k++;
             }
         }
+        while(i<=mid){
+            arr1[k]=arr[i];
+            i++;k++;
+        }
+        while(j<=e){
+            arr1[k]=arr[j];
+            j++;
+            k++;
+        }
     }
 }
 public class Merge {
