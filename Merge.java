@@ -28,6 +28,14 @@ class sorting{
             arr[j]=arr1[i];
         }
     }
+    void recursivesort(int arr[],int s,int e){
+        if(s<e){
+            int mid=s+(e-s)/2;
+            recursivesort(arr, s, e);
+            recursivesort(arr, mid+1, e);
+            mergesort(arr, s, mid, e);
+        }
+    }
 }
 public class Merge {
     
