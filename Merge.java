@@ -38,5 +38,10 @@ class sorting{
     }
 }
 public class Merge {
-    
+    public static void main(String[] args) {
+        int arr[]={3,4,2,1,5,23,21};
+        int n=arr.length;
+        sorting ob=new sorting();
+        ob.recursivesort(arr, 0, n-1);
+    }   
 }
