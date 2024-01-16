@@ -18,6 +18,16 @@ class merge {
                 k++;
             }
         }
+        while (i < mid) {
+            arr[k] = arr[i];
+            i++;
+            k++;
+        }
+        while (j < e) {
+            arr[k] = arr[j];
+            j++;
+            k++;
+        }
     }
 }
 
