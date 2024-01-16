@@ -1,6 +1,6 @@
 package Array_Program;
 import java.util.Scanner;
-class sorting{
+class view{
     void mergesort(int arr[],int s,int mid,int e){
         int arr1[]=new int[e-s+1];
         mid=s+(e-s)/2;
@@ -41,7 +41,12 @@ public class Merge {
     public static void main(String[] args) {
         int arr[]={3,4,2,1,5,23,21};
         int n=arr.length;
-        sorting ob=new sorting();
+        view ob=new view();
         ob.recursivesort(arr, 0, n-1);
+        System.out.println("Sorted Array");
+        for(int i=0;i<n;i++){
+            System.out.print(arr[i]+" ");
+        }
+        System.out.println();
     }   
 }
