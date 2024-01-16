@@ -6,7 +6,14 @@ class sorting{
         mid=s+(e-s)/2;
         int i=s,k=0,j=mid+1;
         while(i<=mid && j<=e){
-            
+            if(arr[i]<=arr[j]){
+                arr1[k]=arr[i];
+                i++;k++;
+            }
+            else{
+                arr1[k]=arr[j];
+                j++;k++;
+            }
         }
     }
 }
