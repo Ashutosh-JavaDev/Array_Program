@@ -29,8 +29,8 @@ class mergeSort {
             k++;
             j++;
         }
-        for (i = 0, j = s; i < merge.length; i++) {
-            merge[k] = arr[i];
+        for (i = 0, j = s; i < merge.length; i++,j++) {
+            arr[j] = merge[i];
         }
     }
 
@@ -39,7 +39,7 @@ class mergeSort {
             int mid = s + (e - s) / 2;
             mergeSorting(arr, s, mid);
             mergeSorting(arr, mid + 1, e);
-            logicMerge(null, s, mid, e);
+            logicMerge(arr, s, mid, e);
         }
     }
 }
