@@ -7,25 +7,29 @@ class mergeSort{
         int merge[]=new int[e-s+1];
         while(i<=mid && j<=e){
             if(arr[i]>arr[j]){
-                arr[k]=arr[i];
+                merge[k]=arr[i];
                 k++;
                 i++;
             }
             else{
-                arr[k]=arr[j];
+                merge[k]=arr[j];
                 k++;
                 j++;
             }
         }
         while(i<=mid){
-            arr[k]=arr[i];
+            merge[k]=arr[i];
             k++;i++;
         }
 
         while(j<=e){
-            arr[k]=arr[j];
+            merge[k]=arr[j];
             k++;j++;
         }
+        for(i=0,j=s;i<merge.length;i++){
+            
+        }
+
     }
 }
 public class MergeSort {
