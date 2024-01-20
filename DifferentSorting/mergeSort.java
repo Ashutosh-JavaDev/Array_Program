@@ -29,6 +29,17 @@ class merging {
             j++;
             k++;
         }
+        for(i=0,j=s;i<mergeArray.length;i++,j++){
+            arr[j]=mergeArray[i];
+        }
+    }
+    void recursiveSort(int arr[],int s,int e){
+        if(s<e){
+            int mid=s+(e-s)/2;
+            recursiveSort(arr, s, mid);
+            recursiveSort(arr, mid+1, e);
+            mErge(arr, s, e);
+        }
     }
 }
 
