@@ -2,7 +2,7 @@ package Array_Program.DifferentSorting;
 
 import java.util.Scanner;
 
-class mergeSort {
+class mSort {
     void logicMerge(int arr[], int s, int mid, int e) {
         mid = s + (e - s) / 2;
         int i = 0, j = mid + 1, k = 0;
@@ -47,7 +47,7 @@ class mergeSort {
 public class MergeSort {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        mergeSort ob = new mergeSort();
+        mSort ob = new mSort();
         System.out.println("Enter the  Size of  the Array");
         int size = sc.nextInt();
         int arr[] = new int[size];
@@ -55,7 +55,7 @@ public class MergeSort {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
         }
-        ob.mergeSorting(arr, 0, size-1);
+        ob.mergeSorting(arr,0,size-1);
         System.out.println("Array After Sort");
         for(int i=0;i<arr.length;i++){
             System.out.print(arr[i]+" ");

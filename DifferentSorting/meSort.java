@@ -2,7 +2,7 @@ package Array_Program.DifferentSorting;
 
 import java.util.Scanner;
 
-class merging {
+class meRging {
     void mErge(int arr[], int s, int e) {
         int mid = s + (e - s) / 2;
         int mergeArray[] = new int[e - s + 1];
@@ -43,10 +43,10 @@ class merging {
     }
 }
 
-public class mergeSort {
+public class meSort {
 public static void main(String[] args) {
     int arr[]={2,1,3,54,21};
-    merging ob=new merging();
+    meRging ob=new meRging();
     ob.mErge(arr, 0, arr.length-1);
     System.out.println("Array After Sort");
     for(int i=0;i<arr.length;i++){
