@@ -44,5 +44,14 @@ class merging {
 }
 
 public class mergeSort {
-
+public static void main(String[] args) {
+    int arr[]={2,1,3,54,21};
+    merging ob=new merging();
+    ob.mErge(arr, 0, arr.length-1);
+    System.out.println("Array After Sort");
+    for(int i=0;i<arr.length;i++){
+        System.out.print(arr[i]+" ");
+    }
+    System.out.println();
+}
 }
