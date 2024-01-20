@@ -3,26 +3,25 @@ package Array_Program.DifferentSorting;
 import java.util.Scanner;
 
 class meRging {
-    void mErge(int arr[], int s, int e) {
-        int mid = s + (e - s) / 2;
+    void mErge(int arr[], int s,int mid, int e) {
         int mergeArray[] = new int[e - s + 1];
-        int i = 0, j = mid + 1, k = 0;
+        int i = s, j = mid + 1, k = 0;
         while (i <= mid && j <= e) {
-            if(arr[i]>arr[j]){
+            if(arr[i]<arr[j]){
                 mergeArray[k]=arr[i];
                 i++;
-                k++;
             }
             else{
                 mergeArray[k]=arr[j];
-                k++;
                 j++;
             }
+            k++;
+
         }
         while(i<=mid){
             mergeArray[k]=arr[i];
-            k++;
             i++;
+            k++;
         }
         while(j<=e){
             mergeArray[k]=arr[j];
@@ -38,16 +37,17 @@ class meRging {
             int mid=s+(e-s)/2;
             recursiveSort(arr, s, mid);
             recursiveSort(arr, mid+1, e);
-            mErge(arr, s, e);
+            mErge(arr,s,mid,e);
         }
     }
 }
 
 public class meSort {
 public static void main(String[] args) {
-    int arr[]={2,1,3,54,21};
     meRging ob=new meRging();
-    ob.mErge(arr, 0, arr.length-1);
+    int arr[]={2,1,3,54,21};
+    int num=arr.length;
+    ob.recursiveSort(arr, 0,num-1);
     System.out.println("Array After Sort");
     for(int i=0;i<arr.length;i++){
         System.out.print(arr[i]+" ");
