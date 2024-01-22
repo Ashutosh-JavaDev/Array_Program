@@ -19,5 +19,7 @@ class sorted {
 }
 
 public class recursionBubbleSort {
-
+    public static void main(String[] args) {
+        
+    }
 }
