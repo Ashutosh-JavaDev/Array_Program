@@ -7,9 +7,12 @@ class sorted {
         if (i >= size - 1) {
             return;
         } else if (j < size - i - 1) {
-            int temp = arr[j];
-            arr[i] = arr[j + 1];
-            arr[j + 1] = temp;
+            if (arr[j] > arr[j + 1]) {
+
+                int temp = arr[j];
+                arr[i] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
             makeArraySort(arr, i, j + 1, size);
 
         } else {
@@ -20,7 +23,7 @@ class sorted {
 
 public class recursionBubbleSort {
     public static void main(String[] args) {
-        sorted ob=new sorted();
-        
+        sorted ob = new sorted();
+        int arr[] = { 3, 5, 1, 2, 6, 21, 12 };
     }
 }
