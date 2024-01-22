@@ -25,5 +25,6 @@ public class recursionBubbleSort {
     public static void main(String[] args) {
         sorted ob = new sorted();
         int arr[] = { 3, 5, 1, 2, 6, 21, 12 };
+        ob.makeArraySort(arr, 0, 0, arr.length-1);
     }
 }
