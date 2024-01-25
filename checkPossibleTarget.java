@@ -7,6 +7,7 @@ class SumTarget{
         for(int i=0;i<size;i++){
             for(int j=i+1;j<size;j++){
                 if(arr[i]!=arr[j] && i!=j){
+                    result=true;
                     System.out.println("arr["+i+"]+arr["+j+"]="+arr[i]+arr[j]);
                 }
             }
