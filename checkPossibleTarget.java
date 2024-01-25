@@ -9,8 +9,8 @@ class SumTarget {
             for (int i = 0; i < size; i++) {
                 for (int j = i + 1; j < size; j++) {
                     if (arr[i] == arr[j] && i != j) {
-                        int temp=arr[i];
-                        if (arr[i] + arr[j] == target && arr[i]!=temp) {
+                        int temp=arr[j];
+                        if (arr[i] + arr[j] == target && arr[j]!=temp) {
                             result = true;
                             System.out.println(arr[i] + "+" + arr[j] + "=" + target);
                         }
