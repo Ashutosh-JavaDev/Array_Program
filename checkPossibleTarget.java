@@ -16,6 +16,12 @@ class SumTarget{
         return result;
 
     }
-}public class checkPossibleTarget {
+}
+public class checkPossibleTarget {
+ public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    SumTarget ob=new SumTarget();
     
+
+ }   
 }
