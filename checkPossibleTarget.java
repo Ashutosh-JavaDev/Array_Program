@@ -21,7 +21,15 @@ public class checkPossibleTarget {
  public static void main(String[] args) {
     Scanner sc=new Scanner(System.in);
     SumTarget ob=new SumTarget();
-    
+    System.out.println("Enter the Size of the Array");
+    int size=sc.nextInt();
+    int arr[]=new int[size];
+    System.out.println("Enter the Value in the Array");
+    for(int i=0;i<size;i++){
+        arr[i]=sc.nextInt();
+    }    
+    boolean res=ob.targetSum(arr, size, 10);
+    System.out.println("Result: "+res);
 
  }   
 }
