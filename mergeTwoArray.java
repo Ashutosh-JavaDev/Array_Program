@@ -28,6 +28,7 @@ class twoMergeArray {
             }
 
             avg = sum / total;
+            System.out.println("Average:    "+avg);
         }
         else{
             int mid=s+(l-s)/2;
