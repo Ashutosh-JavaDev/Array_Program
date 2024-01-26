@@ -15,11 +15,6 @@ class twoMergeArray {
             arr3[k] = arr2[j];
             k++;
         }
-
-        // System.out.println("Third Array Value");
-        // for (int i = 0; i < total; i++) {
-        // System.out.println(arr3[i]);
-        // }
         int sum = 0,s=0,l=total-1;
         float avg = 0;
         if (total % 2 != 0) {
