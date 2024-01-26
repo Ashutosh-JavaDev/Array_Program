@@ -20,7 +20,7 @@ class twoMergeArray {
         // for (int i = 0; i < total; i++) {
         // System.out.println(arr3[i]);
         // }
-        int sum = 0;
+        int sum = 0,s=0,l=total-1;
         float avg = 0;
         if (total % 2 != 0) {
             for (int i = 0; i < total; i++) {
@@ -28,6 +28,13 @@ class twoMergeArray {
             }
 
             avg = sum / total;
+        }
+        else{
+            int mid=s+(l-s)/2;
+            float mead=(arr3[mid]+arr3[mid+1])/2;
+            System.out.println("Result: "+mead);
+
+            
         }
     }
 }
