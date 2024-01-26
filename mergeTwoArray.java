@@ -31,7 +31,7 @@ public class mergeTwoArray {
         int size1=sc.nextInt();
         System.out.println("Enter the Size of the Second Array");
         int size2=sc.nextInt();
-        int total=((size1-1)+(size2-1));
+        int total=(size1+size2)-1;
         int arr1[]=new int [size1];
         int arr2[]=new int [size2];
         int arr3[]=new int[total];
