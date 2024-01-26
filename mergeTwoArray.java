@@ -17,6 +17,10 @@ class twoMergeArray{
                 }
             }
         }
+        System.out.println("Third Array Value");
+        for(int i=0;i<total;i++){
+            System.out.println(arr3[i]);
+        }
     }
 }
 public class mergeTwoArray {
