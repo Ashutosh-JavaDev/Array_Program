@@ -27,5 +27,11 @@ public class mergeTwoArray {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         twoMergeArray ob=new twoMergeArray();
+        System.out.println("Enter Size of the Array 1");
+        int size1=sc.nextInt();
+        System.out.println("Enter the Size of the Second Array");
+        int size2=sc.nextInt();
+        int arr1[]=new int [size1];
+        int arr2[]=new int [size2];
     }
 }
