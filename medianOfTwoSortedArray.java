@@ -14,11 +14,9 @@ class median {
         }
         if (total % 2 != 0) {
             int sum = 0;
-            for (int i = 0; i < size1; i++) {
-                for (int j = 0; j < size2; j++) {
-                    sum = sum + (arr1[i] + arr2[j]);
-                }
-            }
+           for(int i=0;i<total;i++){
+            sum=sum+arr3[i];
+           }
             float Average = sum / total;
             return Average;
         } else {
