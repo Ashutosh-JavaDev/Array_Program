@@ -32,7 +32,7 @@ class twoMergeArray {
         }
         else{
             int mid=s+(l-s)/2;
-            float mead=(arr3[mid]+arr3[mid+1])/2;
+            float mead=(float)(arr3[mid]+arr3[mid+1])/2.0f;
             System.out.println(arr3[mid]+"+"+arr3[mid+1]+" = "+mead);
 
             
