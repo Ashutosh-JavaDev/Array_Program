@@ -24,5 +24,8 @@ class twoMergeArray{
     }
 }
 public class mergeTwoArray {
-    
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        twoMergeArray ob=new twoMergeArray();
+    }
 }
