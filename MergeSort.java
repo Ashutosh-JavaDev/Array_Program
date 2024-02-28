@@ -19,6 +19,17 @@ class merge{
         while(j<=e){
             arr3[k++]=arr[j++];
         }
+        for(int n=0,m=s;n<arr3.length;n++,m++){
+            arr[m]=arr3[n];
+        }
+    }
+    void mS(int arr[],int s,int e){
+        if(s<e){
+            int mid=s+(e-s)/2;
+            mS(arr, s, mid);
+            mS(arr, s, mid+1);
+            sorting(arr, s, mid, e);
+        }
     }
 }
 public class MergeSort {
