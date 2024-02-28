@@ -13,7 +13,12 @@ class merge{
                 arr3[k++]=arr[j++];
             }
         }
-
+        while(i<=mid){
+            arr3[k++]=arr[i++];
+        }
+        while(j<=e){
+            arr3[k++]=arr[j++];
+        }
     }
 }
 public class MergeSort {
