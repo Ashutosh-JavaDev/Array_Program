@@ -33,5 +33,8 @@ class merge{
     }
 }
 public class MergeSort {
-    
+    public static void main(String[] args) {
+        int arr[]={7,3,2,5,9,10};
+        
+    }
 }
