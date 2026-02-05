@@ -31,8 +31,8 @@ class mergenumber {
             mid = newArr[size / 2];
         }
         else{
-           
-            mid=arr1[arr1.length-1]+arr2[0];
+           int temp=size/2;
+            mid=newArr[size/2]+newArr[temp+1];
             mid/=2;
         }
         return mid;
